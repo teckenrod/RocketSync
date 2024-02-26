@@ -9,10 +9,12 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+final class Post {
     var timestamp: Date
+    var title: String
     
-    init(timestamp: Date) {
+    init(timestamp: Date, title: String = "Default Title") {
         self.timestamp = timestamp
+        self.title = title
     }
 }
