@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D5813C42B8D240A00B8CEF6 /* RocketSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813C32B8D240A00B8CEF6 /* RocketSyncApp.swift */; };
-		5D5813C62B8D240A00B8CEF6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813C52B8D240A00B8CEF6 /* AppView.swift */; };
+		5D5813C62B8D240A00B8CEF6 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813C52B8D240A00B8CEF6 /* PostsView.swift */; };
 		5D5813C82B8D240A00B8CEF6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813C72B8D240A00B8CEF6 /* Post.swift */; };
 		5D5813CA2B8D240D00B8CEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5813C92B8D240D00B8CEF6 /* Assets.xcassets */; };
 		5D5813CD2B8D240D00B8CEF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D5813CC2B8D240D00B8CEF6 /* Preview Assets.xcassets */; };
@@ -16,6 +16,13 @@
 		5D5813E32B8D240E00B8CEF6 /* RocketSyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813E22B8D240E00B8CEF6 /* RocketSyncUITests.swift */; };
 		5D5813E52B8D240E00B8CEF6 /* RocketSyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813E42B8D240E00B8CEF6 /* RocketSyncUITestsLaunchTests.swift */; };
 		5D5813F32B8D333000B8CEF6 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5813F22B8D333000B8CEF6 /* PostDetailView.swift */; };
+		5D5814132B8D42DE00B8CEF6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5814122B8D42DE00B8CEF6 /* User.swift */; };
+		5D5814152B8D43C500B8CEF6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5814142B8D43C500B8CEF6 /* SettingsView.swift */; };
+		5D5814172B8D549C00B8CEF6 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5814162B8D549C00B8CEF6 /* CreatePostView.swift */; };
+		5D5814192B8D877D00B8CEF6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5814182B8D877D00B8CEF6 /* ProfileView.swift */; };
+		5D58141B2B8D8C0B00B8CEF6 /* DeviceConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58141A2B8D8C0B00B8CEF6 /* DeviceConnectionView.swift */; };
+		5D58141D2B8D8C3A00B8CEF6 /* DistanceMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D58141C2B8D8C3A00B8CEF6 /* DistanceMeasureView.swift */; };
+		5D5814212B8D949A00B8CEF6 /* DistanceMeasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5814202B8D949A00B8CEF6 /* DistanceMeasureViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 /* Begin PBXFileReference section */
 		5D5813C02B8D240A00B8CEF6 /* RocketSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5813C32B8D240A00B8CEF6 /* RocketSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketSyncApp.swift; sourceTree = "<group>"; };
-		5D5813C52B8D240A00B8CEF6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		5D5813C52B8D240A00B8CEF6 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		5D5813C72B8D240A00B8CEF6 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5D5813C92B8D240D00B8CEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D5813CC2B8D240D00B8CEF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -50,6 +57,13 @@
 		5D5813E22B8D240E00B8CEF6 /* RocketSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketSyncUITests.swift; sourceTree = "<group>"; };
 		5D5813E42B8D240E00B8CEF6 /* RocketSyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketSyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5D5813F22B8D333000B8CEF6 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		5D5814122B8D42DE00B8CEF6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5D5814142B8D43C500B8CEF6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5D5814162B8D549C00B8CEF6 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		5D5814182B8D877D00B8CEF6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5D58141A2B8D8C0B00B8CEF6 /* DeviceConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceConnectionView.swift; sourceTree = "<group>"; };
+		5D58141C2B8D8C3A00B8CEF6 /* DistanceMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMeasureView.swift; sourceTree = "<group>"; };
+		5D5814202B8D949A00B8CEF6 /* DistanceMeasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceMeasureViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +114,9 @@
 		5D5813C22B8D240A00B8CEF6 /* RocketSync */ = {
 			isa = PBXGroup;
 			children = (
+				5D5814102B8D426200B8CEF6 /* Model */,
 				5D5813F12B8D330900B8CEF6 /* View */,
-				5D5813C32B8D240A00B8CEF6 /* RocketSyncApp.swift */,
-				5D5813C72B8D240A00B8CEF6 /* Post.swift */,
+				5D5814112B8D426800B8CEF6 /* Controller */,
 				5D5813C92B8D240D00B8CEF6 /* Assets.xcassets */,
 				5D5813CE2B8D240D00B8CEF6 /* RocketSync.entitlements */,
 				5D5813CF2B8D240D00B8CEF6 /* Info.plist */,
@@ -139,10 +153,49 @@
 		5D5813F12B8D330900B8CEF6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5D5813C52B8D240A00B8CEF6 /* AppView.swift */,
-				5D5813F22B8D333000B8CEF6 /* PostDetailView.swift */,
+				5D58141F2B8D926E00B8CEF6 /* Launch */,
+				5D58141E2B8D924000B8CEF6 /* Posts */,
+				5D5814142B8D43C500B8CEF6 /* SettingsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5D5814102B8D426200B8CEF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D5813C72B8D240A00B8CEF6 /* Post.swift */,
+				5D5814122B8D42DE00B8CEF6 /* User.swift */,
+				5D5814202B8D949A00B8CEF6 /* DistanceMeasureViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D5814112B8D426800B8CEF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D5813C32B8D240A00B8CEF6 /* RocketSyncApp.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5D58141E2B8D924000B8CEF6 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				5D5814182B8D877D00B8CEF6 /* ProfileView.swift */,
+				5D5813C52B8D240A00B8CEF6 /* PostsView.swift */,
+				5D5813F22B8D333000B8CEF6 /* PostDetailView.swift */,
+				5D5814162B8D549C00B8CEF6 /* CreatePostView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		5D58141F2B8D926E00B8CEF6 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5D58141C2B8D8C3A00B8CEF6 /* DistanceMeasureView.swift */,
+				5D58141A2B8D8C0B00B8CEF6 /* DeviceConnectionView.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D5813C62B8D240A00B8CEF6 /* AppView.swift in Sources */,
+				5D5814192B8D877D00B8CEF6 /* ProfileView.swift in Sources */,
+				5D5814212B8D949A00B8CEF6 /* DistanceMeasureViewModel.swift in Sources */,
+				5D58141B2B8D8C0B00B8CEF6 /* DeviceConnectionView.swift in Sources */,
+				5D5813C62B8D240A00B8CEF6 /* PostsView.swift in Sources */,
+				5D5814172B8D549C00B8CEF6 /* CreatePostView.swift in Sources */,
 				5D5813C82B8D240A00B8CEF6 /* Post.swift in Sources */,
 				5D5813C42B8D240A00B8CEF6 /* RocketSyncApp.swift in Sources */,
+				5D58141D2B8D8C3A00B8CEF6 /* DistanceMeasureView.swift in Sources */,
+				5D5814152B8D43C500B8CEF6 /* SettingsView.swift in Sources */,
+				5D5814132B8D42DE00B8CEF6 /* User.swift in Sources */,
 				5D5813F32B8D333000B8CEF6 /* PostDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,8 +507,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RocketSync/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RocketSync;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow for use of GPS measuring.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,8 +539,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RocketSync/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RocketSync;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow for use of GPS measuring.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

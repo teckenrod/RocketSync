@@ -25,7 +25,7 @@ struct RocketSyncApp: App {
 
     var body: some Scene {
         WindowGroup {
-            AppView()
+            PostsView()
         }
         .modelContainer(sharedModelContainer)
     }
