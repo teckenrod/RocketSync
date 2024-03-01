@@ -23,12 +23,14 @@ final class DistanceMeasureViewModel: NSObject, ObservableObject, CLLocationMana
         }
 
         func checkIfLocationIsEnabled() {
-            if CLLocationManager.locationServicesEnabled() {
-                locationManager = CLLocationManager()
-                locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-                locationManager!.delegate = self
-            } else {
-                print("Show an alert letting them know this is off")
+            DispatchQueue.global().async {
+                if CLLocationManager.locationServicesEnabled() {
+                    self.locationManager = CLLocationManager()
+                    self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+                    self.locationManager!.delegate = self
+                } else {
+                    print("Show an alert letting them know this is off")
+                }
             }
         }
 

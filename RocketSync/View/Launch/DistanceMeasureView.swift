@@ -10,17 +10,18 @@ import MapKit
 
 struct DistanceMeasureView: View {
     
-    @State var viewModel = DistanceMeasureViewModel()
-
+    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
     
     var body: some View {
         
         VStack {
-            Map(coordinateRegion: viewModel.binding, showsUserLocation: true, userTrackingMode: .constant(.follow))
-                .edgesIgnoringSafeArea(.all)
-                .onAppear(perform: {
-                    viewModel.checkIfLocationIsEnabled()
-                })
+            Map(position: $position)
+                .mapStyle(.hybrid)
+            
+            .mapControls {
+                MapUserLocationButton()
+                MapCompass()
+            }
         }
         
         .toolbar {
@@ -94,6 +95,7 @@ struct DistanceMeasureView: View {
         }
         .tint(Color("TextColor"))
         .navigationBarBackButtonHidden(true)
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 

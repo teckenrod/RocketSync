@@ -16,18 +16,28 @@ struct PostDetailView: View {
                 Image(systemName: "person.circle")
                     .resizable()
                     .frame(width: 30, height: 30)
+                    .foregroundColor(Color("TextColor"))
+                    .padding(.leading)
+                
                 Text(post.username)
+                    .foregroundColor(Color("TextColor"))
+                
                 Spacer()
+                
                 Text(post.type)
+                    .padding(.trailing)
+                    .foregroundColor(Color("TextColor"))
             }
             
             if let imageData = post.photo, let uiImage = UIImage(data: imageData) {
+                
                 Image(uiImage: uiImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(height: 300)
                     .clipped()
             } else {
+                
                 Image("rocket")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
@@ -36,6 +46,8 @@ struct PostDetailView: View {
             }
             
             Text(post.title)
+                .foregroundColor(Color("TextColor"))
+                .padding(.horizontal)
             
             Divider()
             
@@ -47,17 +59,25 @@ struct PostDetailView: View {
                     Image(systemName: "heart")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .foregroundColor(Color("TextColor"))
                 }
                 Text("0")
+                    .foregroundColor(Color("TextColor"))
+                
                 Spacer()
+                
                 Button(action: {
                     // Handle comment action
                 }) {
                     Image(systemName: "bubble.left")
                         .resizable()
                         .frame(width: 20, height: 20)
+                        .foregroundColor(Color("TextColor"))
                 }
+                
                 Text("0")
+                    .foregroundColor(Color("TextColor"))
+
                 Spacer()
             }
             .padding(.horizontal, 16)

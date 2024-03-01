@@ -19,12 +19,15 @@ struct ProfileView: View {
                         .aspectRatio(1, contentMode: .fit)
                         .frame(width: 150)
                         .padding(.all)
+                        .foregroundColor(Color("TextColor"))
                     
                     VStack {
                         Text("First Last")
                             .fontWeight(.bold)
+                            .foregroundColor(Color("TextColor"))
                         Text("username")
                             .fontWeight(.light)
+                            .foregroundColor(Color("TextColor"))
                     }
                     
                     Spacer()
@@ -98,6 +101,7 @@ struct ProfileView: View {
                 })
                 
                 Spacer()
+                
             }.padding(.all)
             
             switch selection {
@@ -125,6 +129,16 @@ struct ProfileView: View {
                 Spacer()
             }
         }
+        
+        NavigationLink(destination: CreatePostView(), label: {
+            Text("Create Post")
+                .padding(.all)
+                .foregroundStyle(.tint)
+                .background(RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(.tint, lineWidth: 2))
+                .foregroundColor(Color("TextColor"))
+
+            
+        })
         
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
